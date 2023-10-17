@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./app/libs/bootsrap.min.css">
-  <link rel="stylesheet" href="./app/styles.css">
-  <script src="./app/libs/jquery.min.js"></script>
-  <title>Ava Chat</title>
+  <link rel="stylesheet" href="libs/bootsrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="libs/jquery.min.js"></script>
+  <title>Toobaloo</title>
 </head>
 <body>
   <div class="container main">
@@ -22,38 +22,38 @@
     <div class="col-sm-12">
       <div class="col-sm-3">
           <div class="intro-card">
-            <h1 class="text-center">AvaChat</h1>
-            <p class="text-center fst-italic desc">👨🏽‍💻: <a href="https://github.com/Jaykef" target="_blank" style="text-decoration: none;font-size: 14px;">Jaward Sesay ( 苏杰 )</a> - Intern @ LinkSoul AI <br>(Ex-Intern @ Z-Lab BAAI) <br><small> Software Engineering Student @ Beijing Institute of Technology</small><br>Bridging the gap between Large Language Models and animated Talking-Head avatars using a single image and chat response as inputs (DI-D + ChatGPT).</p>
+            <h1 class="text-center">Toobaloo</h1>
+            <p class="text-center fst-italic desc">👨🏽‍💻:Dit is een prototype voor het toobaloo project.<br>Doe de breinoefeningen.</p>
           </div>
 
           <div class="col-md-12 p-3 mb-2 mt-4 d-block">
-            <h4 class="pb-2">Select an avatar to chat with</h4>
+            <h4 class="pb-2">Kies je coach!</h4>
             <div class="d-flex">
               <div class="col-md-3 p-1">
-                <img src="app/images/jaward.png" alt="Jaward" class="img-fluid avatar-img" data-src="app/images/jaward.png" >
+                <img src="images/jaward.png" alt="Jaward" class="img-fluid avatar-img" data-src="images/jaward.png" >
               </div>
               <div class="col-md-3 p-1">
-                <img src="app/images/joker.png" alt="Joker" class="img-fluid avatar-img" data-src="app/images/joker.png">
+                <img src="images/aquilla.png" alt="Aquilla" class="img-fluid avatar-img" data-src="images/aquilla.png">
               </div>
               <div class="col-md-3 p-1">
-                <img src="app/images/amira.png" alt="Amira" class="img-fluid avatar-img" data-src="app/images/amira.png">
+                <img src="images/amira.png" alt="Amira" class="img-fluid avatar-img" data-src="images/amira.png">
               </div>
               <div class="col-md-3 p-1">
-                <img src="app/images/aquilla.png" alt="Aquilla" class="img-fluid avatar-img" data-src="app/images/aquilla.png">
+                <img src="images/joker.png" alt="Joker" class="img-fluid avatar-img" data-src="images/joker.png">
               </div>
             </div>
             <div class="d-flex mb-4">
               <div class="col-md-3 p-1">
-                <img src="app/images/sonia.png" alt="Sonia" class="img-fluid avatar-img" data-src="app/images/sonia.png">
+                <img src="images/sonia.png" alt="Sonia" class="img-fluid avatar-img" data-src="images/sonia.png">
               </div>
               <div class="col-md-3 p-1">
-                <img src="app/images/dong.png" alt="Dong" class="img-fluid avatar-img" data-src="app/images/dong.png">
+                <img src="images/dong.png" alt="Dong" class="img-fluid avatar-img" data-src="images/dong.png">
               </div>
               <div class="col-md-3 p-1">
-                <img src="app/images/sully.png" alt="Sully" class="img-fluid avatar-img" data-src="app/images/sully.png" >
+                <img src="images/sully.png" alt="Sully" class="img-fluid avatar-img" data-src="images/sully.png" >
               </div>
               <div class="col-md-3 p-1">
-                <img src="app/images/neytiri.png" alt="Neytiri" class="img-fluid avatar-img" data-src="app/images/neytiri.png">
+                <img src="images/neytiri.png" alt="Neytiri" class="img-fluid avatar-img" data-src="images/neytiri.png">
               </div>
             </div>
 
@@ -65,13 +65,13 @@
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="api2d-api-key" placeholder="API2D api key for GPT4">
-                  </div>
+                </div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="openai-api-key" placeholder="Optional - OpenAI api key for ChatGPT">
                 </div>
               </form>
             </div>
-            <h4 class="pb-2 pt-4">Select a chat model</h4>
+            <h4 class="pb-2 pt-4">Selecteer een chat model</h4>
             <select id="select_model" class="mb-2"></select>
             <h4 class="pb-2 pt-4">Choose language for audio input</h4>
             <select id="select_language"></select>
@@ -79,20 +79,20 @@
           </div>
 
           <div class="intro-card mt-4">
-            <h5 class="text-center">Get D-ID Api key <a href="https://studio.d-id.com/account-settings/" target="_blank" style="text-decoration: none;">Here</a><br><br>Get API2D Api key <a href="https://api2d.com/" target="_blank" style="text-decoration: none;">Here</a></h5>
+            <!-- <h5 class="text-center">Get DID Api key <a href="https://api2d.com/" target="_blank" style="text-decoration: none;">Here</a><br><br>Get API2D Api key <a href="https://api2d.com/" target="_blank" style="text-decoration: none;">Here</a></h5> -->
           </div>
       </div>
       <div class="col-sm-9">
         <div class="main-chat">
           <!-- talking-head video -->
           <div id="talking-vid">
-            <h5 class="mt-4 text-center mx-4" id="select-inst">Select an avatar to chat with <br>on the left sidebar</h5>
+            <h5 class="mt-4 text-center mx-4" id="select-inst">Selecteer een coach om mee te praten <br>aan de linkerkant.</h5>
             <div class="no-video"></div>
             <video id="talking-video" autoplay></video>
             <div class="stats-btn">
               <div id="buttons" class="text-center">
-                <button id="connect-button" type="button" class="btn btn-primary connect">Call</button>
-                <button id="destroy-button" type="button" class="btn btn-danger">End</button>
+                <button id="connect-button" type="button" class="btn btn-primary connect">bel</button>
+                <button id="destroy-button" type="button" class="btn btn-danger">Stop</button>
               </div>
               <!-- stream connection status -->
               <div id="status" class="text-center mt-2 pt-1">
@@ -123,7 +123,7 @@
               <textarea type="text" rows="1" id="user-text" class="form-control p-3 mt-2 final input" placeholder="Send a message..."></textarea>
               <div id="input-audio" class="input-group-append p-2">
                 <button id="start_button" class="">
-                  <img id="start_img" class="" src="app/images/mic.gif" alt="Start">
+                  <img id="start_img" class="" src="images/mic.gif" alt="Start">
                 </button>
                 <button id="send-text-button" class="btn btn-success speech-button">
                   <svg id="send-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="26" height="26" fill="currentColor" class="h-4 w-4 m-1 md:m-0" stroke-width="2"><path d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z" fill="currentColor"></path></svg>
@@ -145,8 +145,8 @@
   <script>
     window.process = { browser: true, env: { ENVIRONMENT: 'BROWSER' } };
   </script>
-  <script type="module" src="./app/js/app.js"></script>
-  <script type="module" src="./app/js/recoder.js"></script>
-  <script src="./app/js/languages.js"></script>
+  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/recoder.js"></script>
+  <script src="./js/languages.js"></script>
 </body>
 </html>
