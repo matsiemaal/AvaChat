@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="libs/bootsrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <script src="libs/jquery.min.js"></script>
-  <title>Ava Chat by Jaward (Jaykef)</title>
+  <title>Toobaloo</title>
 </head>
 <body>
   <div class="container main">
@@ -22,12 +22,12 @@
     <div class="col-sm-12">
       <div class="col-sm-3">
           <div class="intro-card">
-            <h1 class="text-center">AvaChat</h1>
-            <p class="text-center fst-italic desc">👨🏽‍💻: <a href="https://github.com/Jaykef" target="_blank" style="text-decoration: none;font-size: 14px;">Jaward Sesay ( 苏杰 )</a> - Intern @ LinkSoul AI <br>(Former intern @ Z-Lab BAAI) <br><small> Software Engineering Student @ Beijing Institute of Technology</small><br>Bridging the gap between Large Language Models and animated Talking-Head avatars using a single image and chat response as inputs (DI-D + ChatGPT).</p>
+            <h1 class="text-center">Toobaloo</h1>
+            <p class="text-center fst-italic desc">👨🏽‍💻:Dit is een prototype voor het toobaloo project.<br>Doe de breinoefeningen.</p>
           </div>
 
           <div class="col-md-12 p-3 mb-2 mt-4 d-block">
-            <h4 class="pb-2">Select an avatar to chat with</h4>
+            <h4 class="pb-2">Kies je coach!</h4>
             <div class="d-flex">
               <div class="col-md-3 p-1">
                 <img src="images/jaward.png" alt="Jaward" class="img-fluid avatar-img" data-src="images/jaward.png" >
@@ -71,7 +71,7 @@
                 </div>
               </form>
             </div>
-            <h4 class="pb-2 pt-4">Select a chat model</h4>
+            <h4 class="pb-2 pt-4">Selecteer een chat model</h4>
             <select id="select_model" class="mb-2"></select>
             <h4 class="pb-2 pt-4">Choose language for audio input</h4>
             <select id="select_language"></select>
@@ -79,20 +79,20 @@
           </div>
 
           <div class="intro-card mt-4">
-            <h5 class="text-center">Get DID Api key <a href="https://api2d.com/" target="_blank" style="text-decoration: none;">Here</a><br><br>Get API2D Api key <a href="https://api2d.com/" target="_blank" style="text-decoration: none;">Here</a></h5>
+            <!-- <h5 class="text-center">Get DID Api key <a href="https://api2d.com/" target="_blank" style="text-decoration: none;">Here</a><br><br>Get API2D Api key <a href="https://api2d.com/" target="_blank" style="text-decoration: none;">Here</a></h5> -->
           </div>
       </div>
       <div class="col-sm-9">
         <div class="main-chat">
           <!-- talking-head video -->
           <div id="talking-vid">
-            <h5 class="mt-4 text-center mx-4" id="select-inst">Select an avatar to chat with <br>on the left sidebar</h5>
+            <h5 class="mt-4 text-center mx-4" id="select-inst">Selecteer een coach om mee te praten <br>aan de linkerkant.</h5>
             <div class="no-video"></div>
             <video id="talking-video" autoplay></video>
             <div class="stats-btn">
               <div id="buttons" class="text-center">
-                <button id="connect-button" type="button" class="btn btn-primary connect">Call</button>
-                <button id="destroy-button" type="button" class="btn btn-danger">End</button>
+                <button id="connect-button" type="button" class="btn btn-primary connect">bel</button>
+                <button id="destroy-button" type="button" class="btn btn-danger">Stop</button>
               </div>
               <!-- stream connection status -->
               <div id="status" class="text-center mt-2 pt-1">
