@@ -27,7 +27,7 @@ export async function chatGPTRequest(sentMessage) {
         },
         body: JSON.stringify({
           model: 'gpt-3.5-turbo',
-          messages: [{ role: 'user', content: sentMessage }],
+          messages: [{role: 'system', content: "je bent een expert in het geheugen je naam is Andre.Blijf ALTIJD in je rol. Je spreekt altijd in metaforen gericht op het geheugen. Stel mij een vraag. "},{ role: 'user', content: sentMessage }],
         }),
       });
   
