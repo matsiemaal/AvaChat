@@ -55,7 +55,7 @@ const sourceUrlMap = {
 };
 
 const voiceUrlMap = {
-  Jaward: 'en-US-JasonNeural',
+  Jaward: 'nl-NL-MaartenNeural',
   Aquilla: 'zh-CN-XiaoyiNeural',
   Amira: 'en-ZA-LeahNeural',
   Joker: 'en-US-DavisNeural',
