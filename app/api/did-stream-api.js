@@ -51,7 +51,7 @@ const sourceUrlMap = {
   Sonia: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/sonia.png',
   Dong: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/dong.png',
   Sully: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/sully.png',
-  Neytiri: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/neytiri.png'
+  Neytiri: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/neytiri.png' 
 };
 
 const voiceUrlMap = {
