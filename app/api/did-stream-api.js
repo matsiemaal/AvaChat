@@ -44,7 +44,7 @@ getDIDApiKey.addEventListener('input', () => {
 
 // https source urls for avatar images
 const sourceUrlMap = {
-  Jaward: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/jaward.png',
+  Jaward: 'https://toobaloo.matsiemaal.nl/app/images/andre.png',
   Aquilla: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/aquilla.png',
   Amira: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/amira.png',
   Joker: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/joker.png',
@@ -56,13 +56,13 @@ const sourceUrlMap = {
 
 const voiceUrlMap = {
   Jaward: 'nl-NL-MaartenNeural',
-  Aquilla: 'zh-CN-XiaoyiNeural',
-  Amira: 'en-ZA-LeahNeural',
-  Joker: 'en-US-DavisNeural',
-  Sonia: 'en-IN-NeerjaNeural',
-  Dong: 'zh-CN-YunjianNeural',
-  Sully: 'en-US-DavisNeural',
-  Neytiri: 'en-US-JennyNeural'
+  Aquilla: 'nl-NL-MaartenNeural',
+  Amira: 'nl-NL-MaartenNeural',
+  Joker: 'nl-NL-MaartenNeural',
+  Sonia: 'nl-NL-FennaNeural',
+  Dong: 'nl-NL-FennaNeural',
+  Sully: 'nl-NL-FennaNeural',
+  Neytiri: 'nl-NL-FennaNeural'
 };
 
 // Helper functions
