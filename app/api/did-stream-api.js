@@ -45,7 +45,7 @@ getDIDApiKey.addEventListener('input', () => {
 // https source urls for avatar images
 const sourceUrlMap = {
   Jaward: 'https://toobaloo.matsiemaal.nl/app/images/andre.png',
-  Mats: 'https://toobaloo.matsiemaal.nl/app/images/Mats.png',
+  Mats: 'https://raw.githubusercontent.com/matsiemaal/AvaChat/main/app/images/Mats.png',
   Amira: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/amira.png',
   Joker: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/joker.png',
   Sonia: 'https://raw.githubusercontent.com/Jaykef/gradio-practice/main/sonia.png',
