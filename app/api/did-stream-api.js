@@ -122,7 +122,7 @@ function setVideoElement(stream) {
 }
 
 function playIdleVideo() {
-  talkVideo.srcObject = undefined;
+  talkVideo.srcObject = "../videos/Mats.mp4";
   talkVideo.loop = true;
 }
 
