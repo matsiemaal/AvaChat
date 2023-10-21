@@ -214,6 +214,7 @@ export async function sendConnectionRequest() {
     const videoSource = videoElement.src;
     const videoName = videoSource.split('/').pop().split('.').slice(0, -1).join('.');
     const selectedVideo = videoName;
+    console.log("selected video =", selectedVideo);
     talkVideo.src = `app/videos/${selectedVideo}.mp4`;
     const updatedSourceUrl = sourceUrlMap[selectedVideo];
     console.log(updatedSourceUrl);
