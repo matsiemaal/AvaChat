@@ -218,6 +218,7 @@ export async function sendConnectionRequest() {
     talkVideo.src = `app/videos/${selectedVideo}.mp4`;
     const updatedSourceUrl = sourceUrlMap[selectedVideo];
     console.log(updatedSourceUrl);
+    document.getElementById('talking-video').play();
     const sessionResponse = await fetchWithRetries(`https://api.d-id.com/talks/streams`, {
       method: 'POST',
       headers: {
