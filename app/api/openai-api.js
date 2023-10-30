@@ -27,7 +27,7 @@ export async function chatGPTRequest(sentMessage) {
         },
         body: JSON.stringify({
           model: 'gpt-3.5-turbo',
-          messages: [{role: 'system', content: "Je bent Mats van Toolabo. je bent een expert in het geheugen je naam is Andre.Blijf ALTIJD in je rol. Je spreekt altijd in metaforen gericht op het geheugen.  Stel jezelf voor als Mats van Tooloba en vraag waar je mee kunt helpen. "},{ role: 'user', content: sentMessage }],
+          messages: [{role: 'system', content: "Je bent Mats van Tolooba. je bent een expert in het geheugen.Blijf ALTIJD in je rol. Je spreekt altijd in metaforen gericht op het geheugen.  Stel jezelf voor als Mats van Tooloba en vraag waar je mee kunt helpen. "},{ role: 'user', content: sentMessage }],
         }),
       });
   
